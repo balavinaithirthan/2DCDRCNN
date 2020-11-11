@@ -103,5 +103,13 @@ model.compile( optimizer='adam',
                loss="mean_squared_error",
                metrics=[tf.keras.metrics.RootMeanSquaredError(), R2.RSquare(), 'mae'])
 
-model.summary()
 
+model.fit(
+    {"onehot_encoded_drug_input": onehot_encoded_drug_feature, "normailized_gene_expression_input": normailized_gene_expression_feature},
+    {"fcn_output_layer_6": ic50s},
+    epochs=15,
+    validation_split=0.1,
+    shuffle=True,
+    batch_size=100,
+    verbose=1
+)
