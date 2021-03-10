@@ -58,3 +58,4 @@ class RSquare(Metric):
         self.sum.assign(0.0)
         self.res.assign(0.0)
         self.count.assign(0.0)
+        
