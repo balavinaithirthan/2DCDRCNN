@@ -1,4 +1,4 @@
-#I found a bug in tensorflow 2.0 R squared metric. This code fixes that bug. 
+#I found a bug in tensorflow 2.3 R squared metric. This code fixes that bug. 
 
 import tensorflow as tf
 from tensorflow.keras.metrics import Metric
