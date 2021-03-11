@@ -1,0 +1,5 @@
+The 987 cell lines and 19,000 genes is representative of the model's potential, but is difficult to work with for intial testing. 
+This dataset is a smaller set of 447 cell lines are 600 genes. Predictive accuracy will be lower, but it provides framework for implementing
+your own data.
+
+drive link:
